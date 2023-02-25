@@ -1,0 +1,8 @@
+Esse é um excelentíssimo texto de teste!!
+Caracteres unicode: ♯✓🌏👌
+
+
+Note essas quebras de linhas no meio do texto
+
+Ou a ausência dessa quebra de linha no final da página
+AHOY
