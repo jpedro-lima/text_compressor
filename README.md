@@ -1,10 +1,9 @@
-# Labs 4º Edição
+# Compressor de dados Huffman
 
 No diretório existe um Makefile, os códigos dos programas, a libft e dois arquivos .txt para testes.
 Fique à vontade para criar novos arquivos ou editar esses, mas é importante eles possuirem a extensão .txt.
 
 ## Como funciona
-
 O Makefile irá compilar dois programas `encoder` e `decoder`.
 
 `encoder:` Este progama irá comprimir arquivos de texto usando o algoritmo de Huffman, e gerar um arquivo .dat com o mesmo nome, depois irá executar o programa `decoder` e imprimir na tela os dados da descompressão.
@@ -46,17 +45,16 @@ Execução:
 - A memória compartilhada que possui a tabela de tradução, só será fechada se o `decoder` for executado pelo usuário.  
 - Este compressor de dados é mais efetivo com arquivos de textos com 5 caracteres ou mais por causa da chave da memória compartilhada nos primeiros 4bytes.  
 - O tamanho do arquivo descomprimido pode variar um pouco no caso de possuir caracteres especiais ou acentuação.  
-- É possível usar o `encoder` em vários arquivos antes de usar o `decoder`. 
+- É possível usar o `encoder` em vários arquivos antes de usar o `decoder`.
+- E é claro, este programa foi criado para o ambiente **linux**
 
 ## Teclogias utilizadas
 - Memória compartilhada
 	- bibliotecas: `sys/ipc.h`, `sys/shm.h` e `sys/types.h`
 	- No cabeçalho dos programas está um guia das funções útilizadas
-- wchar_t como estrutura de caractere para poder receber todos os tipos de texto unicode e suas funções
+- wchar_t como estrutura de caractere para poder receber todos os tipos de texto unicode
 	- biblioteca: `wchar.h`
 - setlocale para redefinir a compatibilidade de texto de acordo com as variáveis de ambiente do usuário
 	- biblioteca: `locale.h`
 
-## Considerações finais
-
-Eu gostaria de ter mais 2 dias hábeis para finalizar esse projeto, com esse tempo eu faria com que o arquivo de texto fosse lido e interpretado em partes no caso dele ser muito longo para não quebrar com um malloc muito extenso.
+**NOTA:** Este projeto ainda está em desenvolvimento, preciso limpar seu código e corrigir um bug que ocorre em uma situação específica
