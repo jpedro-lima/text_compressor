@@ -48,7 +48,7 @@ Execução:
 - É possível usar o `encoder` em vários arquivos antes de usar o `decoder`.
 - E é claro, este programa foi criado para o ambiente **linux**
 
-## Teclogias utilizadas
+## Tecnologias utilizadas
 - Memória compartilhada
 	- bibliotecas: `sys/ipc.h`, `sys/shm.h` e `sys/types.h`
 	- No cabeçalho dos programas está um guia das funções útilizadas
